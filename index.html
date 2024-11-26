@@ -8,21 +8,20 @@
     <title>My Portfolio</title>
 </head>
 
-<body">
-    <header>
-        <h1 align="center">
-            <font face="Arial" color="white">Shaveen Udayanga</font>
-        </h1>
-        <p align="center">
-            <font face="Arial" color="white">Computer Science Undergraduate</font>
-        </p>
-    </header>
+<header>
+    <h1 align="center">
+        <font face="Arial" color="white">Shaveen Udayanga</font>
+    </h1>
+    <p align="center">
+        <font face="Arial" color="white">Computer Science Undergraduate</font>
+    </p>
+</header>
 
-
+<body>
     <br />
 
     <h2 align="left">About Me</h2>
-    <p>I’m a curious tech fan who loves turning ideas into reality, whether it’s learning new code or dreaming up fun
+    <p>I’m a kid who loves turning ideas into reality, whether it’s learning new code or dreaming up fun
         projects. Right now, I’m exploring Python, C++ and CUDA, taking it one step at a time.<br>
         My goal? To quietly create things that make
         life a little better—and maybe surprise people along the way.</p>
@@ -41,7 +40,7 @@
     <br />
 
     <h2>Projects</h2>
-    <table border="1">
+    <table>
         <th>Project Name</th>
         <th>Description</th>
         <th>Technology Used</th>
@@ -82,6 +81,8 @@
 
     <br />
 
+    </body>
+
     <footer>
         <p>
             <font face="Arial" color="white">Connect with me:</font>
@@ -102,8 +103,6 @@
             <i class="fa-brands fa-tiktok"></i>Tiktok
         </a>
     </footer>
-
-    </body>
 
     <style>
         body {
@@ -129,8 +128,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        table {
-            max-width: 1300px;
+        th, td, tr{
+            background-color: rgb(233, 233, 233);
+            border: 1px;
+            border-color: #b9b9b9;
+            border-spacing: 0px;
+            padding: 10px;
             border-style: solid;
         }
 
@@ -162,13 +165,23 @@
             background-color: #0056b3;
         }
 
-        footer,
-        header {
+        footer{
             text-align: center;
             padding: 20px;
             background-color: #05414e;
             position: relative;
+            left: 0;
             bottom: 0;
+            width: 100%;
+        } 
+        
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #05414e;
+            position: relative;
+            top: 0;
+            left: 0;
             width: 100%;
         }
 
