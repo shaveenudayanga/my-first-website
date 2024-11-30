@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
     <head>
-        <script src="https://kit.fontawesome.com/ea560a5dbe.js" crossorigin="anonymous"></script>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Competible" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="./styles.css">
+        <script src="https://kit.fontawesome.com/ea560a5dbe.js" crossorigin="anonymous"></script>
     </head>
     
+
     <body>
-        
+
+        <!-- Header -->
         <header>
             <img id="dp" src="https://pethometown.com/shaveen.jpg" alt="My Photo"/>
-            <h1 id="name">SHAVEEN UDAYANGA</h1>
-            <p id="tagline">Computer Science Undergraduate</p>
+            <h1 id="myName">SHAVEEN UDAYANGA</h1>
+            <p id="tagline">Still figuring out who I am...</p>
         </header>
     
         <br />
 
         
-        <div class="container" id="aboutMe">
-            <h2 class="topic">About Me</h2><br/>
-            <p class="content">I’m a kid who loves turning ideas into reality, whether it’s learning new code or dreaming up fun
-                projects. Keeping an eye on AI/ML and parallel computing for now.<br>
-                My goal? To quietly create things that make
-                life a little better—and maybe surprise people along the way.<br>
-                I also enjoy playing rugby, and my creative pursuits include singing, playing the violin, and keyboard.
+        <!-- About Me -->
+        <section id="aboutMe" class="container">
+            <h2>About Me</h2>
+            <p>
+                I’m a kid who loves turning ideas into reality, whether it’s learning new code or dreaming up fun projects. 
+                Keeping an eye on AI/ML and parallel computing for now. My goal? To quietly create things that make life a 
+                little better—and maybe surprise people along the way. I also enjoy playing rugby, and my creative pursuits 
+                include singing, playing the violin, and keyboard.
             </p>
-        </div>
+        </section>
+    
 
-        <br />
-
-
-        <div class="container" id="skills">
-            <h2 class="topic">Skills</h2><br/>
-
-            <ul class="content">
+        <!-- Skills -->
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul>
                 <li>Technical Skills
                     <ul>
                         <li>Programming Languages: Python, Java, C, C++</li>
@@ -54,57 +56,62 @@
                 <li>Leadership & Management Skills</li>
                 <li>Problem-Solving Skills</li>
             </ul>
-        </div>
-
-        <br/>
+        </section>
 
 
-        <div id="projects">
-            <h2>Projects</h2><br/>
+        <!-- Projects -->
+        <section id="projects" class="container">
+            <h2>Projects</h2>
             <table>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Technology Used</th>
-                <tr>
-                    <td>Archimedes Wind Turbine</td>
-                    <td>Designing compact, sustainable wind turbines for small-scale households in Sri Lanka.</td>
-                    <td>CAD software, Mechanical design, Python</td>
-                </tr>
-                <tr>
-                    <td>Restaurant Table Reservation</td>
-                    <td>A system to manage table reservations in restaurants, allowing customers to book and view availability
-                        online.</td>
-                    <td>Java, JavaFX, MySQL, php</td>
-                </tr>
-                <tr>
-                    <td>Parallel Matrix Multiplication</td>
-                    <td>Implementation of a highly optimized matrix multiplication algorithm using GPU acceleration for
-                        scientific computing tasks.</td>
-                    <td>CUDA, C, C++, NVIDIA GPUs, Performance Profiling Tools</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Technology Used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Archimedes Wind Turbine</td>
+                        <td>Designing compact, sustainable wind turbines for small-scale households in Sri Lanka.</td>
+                        <td>CAD software, Mechanical design, Python</td>
+                    </tr>
+                    <tr>
+                        <td>Restaurant Table Reservation</td>
+                        <td>A system to manage table reservations in restaurants, allowing customers to book and view availability
+                            online.</td>
+                        <td>Java, JavaFX, MySQL, php</td>
+                    </tr>
+                    <tr>
+                        <td>Parallel Matrix Multiplication</td>
+                        <td>Implementation of a highly optimized matrix multiplication algorithm using GPU acceleration for
+                            scientific computing tasks.</td>
+                        <td>CUDA, C, C++, NVIDIA GPUs, Performance Profiling Tools</td>
+                    </tr>
+                </tbody>
             </table>
-        </div>
+        </section>
+
+       
+        <!-- Contact Me -->
+        <section id="contactMe">
+            <h2 id="c_me_txt">Contact Me</h2><br/>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
     
-        <br/><br/><br/><br/>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+    
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
 
-        <form action="/submit-form" method="post">
-            <h2 id="contactMe">Contact Me</h2><br/>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
-
-            <button type="submit">Submit</button>
-        </form>
-
-        <br/><br/>
-
-
+        <!-- Footer -->
         <footer>
             <p>
                 <font face="Arial" color="white">Connect with me:</font>
